@@ -1,0 +1,149 @@
+.pricing {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 77px;
+    a {
+        &:link, &:visited, &:hover, &:active {
+            color: #fff;
+        }
+    }
+    .pricing-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 1350px;
+        margin: 0 auto;
+    }
+    h2 {
+        margin-bottom: 14px;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        display: block;
+        font: 400 1.4rem 'Open Sans';
+        line-height: 4.1rem;
+        text-align: left;
+    }
+
+    .price {
+        font: 300 4.6rem 'Open Sans';
+        text-align: center;
+        line-height: 6.4rem;
+    }
+
+    .comment {
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 14px;
+    }
+
+    .basic, .professional, .premium {
+        height: 251px;
+        min-width: 293px;
+        max-width: 372px;
+        width: calc(100% - 82px);
+        border: 1px solid #FB3B64;
+        border-radius: 18px;
+        margin: 0 41px;
+        position: relative;
+    }
+
+    .button {
+        text-align: center;
+        font: bold 1.3rem 'Open Sans';
+        color: #fff;
+        line-height: 50px;
+        width: 150px;
+        border-radius: 25px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+
+    .price1 {
+        color: #FB3B64;
+    }
+
+    .basic {
+        .button{
+            background-color: #EB476E;
+        }
+        li:nth-child(n)::before {
+            content: "";
+            display: inline-block;
+            height: 11px;
+            width: 11px;
+            background: url('../assets/Ckechmark-1.svg') no-repeat;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        li:nth-child(n+4)::before {
+            background: url('../assets/Close.svg') no-repeat;
+        }
+    }
+
+    .professional {
+        height: 277px;
+        width: calc(100% - 36px);
+        border-color: #07ACE6;
+        box-shadow: 5px 10px 27px #07ACE629;
+        margin: 54px 18px;
+        .content {
+            margin-top: 40px;
+        }
+        .button{
+            background-color: #07ACE6;
+        }
+        li:nth-child(n)::before {
+            content: "";
+            display: inline-block;
+            height: 11px;
+            width: 11px;
+            background: url('../assets/Ckechmark-1.svg') no-repeat;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        li:nth-child(n+5)::before {
+            background: url('../assets/Close.svg') no-repeat;
+        }
+    }
+
+    .price2 {
+        color: #07ACE6;
+    }
+
+    .comment {
+        font: bold 1.2rem 'Raleway';
+        line-height: 1.4rem;
+    }
+
+    .premium {
+        border-color: #55DFB4;
+        .button{
+            background-color: #55DFB4;
+        }
+        li:nth-child(n)::before {
+            content: "";
+            display: inline-block;
+            height: 11px;
+            width: 11px;
+            background: url('../assets/Ckechmark-1.svg') no-repeat;
+            background-size: cover;
+            margin-right: 10px;
+        }
+    }
+
+    .price3 {
+        color: #55DFB4;
+    }
+}

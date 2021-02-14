@@ -1,0 +1,116 @@
+.questions {
+    padding-top: 80px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 900px;
+        width: calc(100% - 60px);
+    }
+    .info {
+        h1 {
+            font-size: 4rem;
+            line-height: 4.7rem;
+        }
+        .emailphone {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            .email, .phone {
+                display: flex;
+                span {
+                    font: 600 1.6rem 'Open Sans';
+                    color: #A5A5A5;
+                    line-height: 27px;
+                    margin: 0 20px 0 10px;
+                }
+            }
+            .phone {
+                margin: 10px 0 50px 0;
+            }
+        }
+    }
+
+    p {
+        margin: 5px 0 38px 0;
+        // margin: 22px 0 42px 0;
+    }
+
+    ul {
+        list-style-image: url('../assets/Phone\ Icon.svg');
+    }
+
+    form {
+        label:nth-of-type(n) {
+            font: bold 1.1rem 'Open Sans';
+            color: #08A6E4;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        label:last-of-type {
+            position: relative;
+            font: 400 1.2rem 'Open Sans';
+            color: #707070;
+            text-transform: unset;
+            line-height: 1.7rem;
+            letter-spacing: unset;
+        }
+    }
+
+    input[type="text"], input[type="email"] {
+        height: 42px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #95989A;
+        margin-bottom: 30px;
+        outline: unset;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        height: 24px;
+        width: 24px;
+        border: 1px solid #95989A;
+        border-radius: 4px;
+        margin-right: 10px;
+        position: absolute;
+        cursor: pointer;
+        outline: none;
+    }
+
+    input[type="checkbox"]:checked:after {
+        content: "";
+        width: 11px;
+        height: 11px;
+        background: transparent url('../assets/Checkmark.svg') 0% 0% no-repeat padding-box;;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .check {
+        display: inline-block;
+        padding-left: 34px;
+    }
+
+    input[type="submit"] {
+        float: right;
+        height: 57px;
+        width: 226px;
+        font: bold 1.3rem 'Open Sans';
+        color: #fff;
+        background: #08A6E4;
+        border: none;
+        border-radius: 35px;
+        margin: 20px 0 44px 0;
+        outline: unset;
+    }
+
+    input[type="submit"]:hover {
+        cursor: pointer;
+    }
+}

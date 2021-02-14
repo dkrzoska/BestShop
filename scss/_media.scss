@@ -1,0 +1,186 @@
+@media (min-width: 769px) {
+
+    h1 {
+        font-size: 4.9rem;
+        line-height: 5.7rem;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+    }
+
+    //header
+    nav {
+        display: unset;
+    }
+    .hamburger {
+        display: none;
+    }
+
+
+
+    //main
+    .openyourshop {
+        margin-top: 130px;
+        .picturemain {
+            background-size: 107%;
+        }
+    }
+
+    .numbers {
+        padding: 100px 0 120px 0;
+        .container {
+            flex-direction: row;
+        }
+        h2{
+            margin-bottom: 100px;
+        }
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .benefits {
+        .container {
+            padding: 105px 80px;
+        }
+        .row1, .row2, .row3 {
+            flex-direction: row;
+            justify-content: unset;
+            align-items: unset;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .row1 {
+            .text1 {
+                width: 50%;
+                padding: 90px 90px 90px 35px;
+                p {
+                    margin-top: 30px;
+                }
+            }
+            .picture1 {
+                width: 50%;
+                img {
+                    height: 220px;
+                    margin: 110px 60px 0 0;
+                }
+                &::before {
+                    height: 180px;
+                    width: 180px;
+                    margin: 70px 0 0 220px;
+                }
+            }
+            .line1 {
+                display: block;
+            }
+        }
+
+        .row2 {
+            margin: 37px 0;
+            .text2 {
+                width: 50%;
+                padding: 70px 20px 70px 120px;
+                p{
+                    margin-top: 30px;
+                }
+            }
+            .picture2 {
+                width: 45%;
+                img {
+                    height: 330px;
+                    margin: 30px 10px 10px 70px;
+                }
+                &::before {
+                    height: 320px;
+                    width: 320px;
+                    margin: 15px 0 0 70px;
+                }
+            }
+            .line2 {
+                display: block;
+            }
+        }
+
+        .row3 {
+            height: 370px;
+            .text3 {
+                width: 51%;
+                border: 1px solid #E8E9ED;
+                border-radius: 5px;
+                padding: 70px 35px;
+                p {
+                    margin-top: 30px;
+                }
+            }
+            .picture3 {
+                height: 100%;
+                width: 49%;
+                margin-left: 60px;
+            }
+            .line3 {
+                display: block;
+            }
+        }
+    }
+
+    .questions {
+        .container {
+            flex-direction: row;
+        }
+        .info {
+            width: 50%;
+            .emailphone {
+                flex-direction: row;
+                .phone {
+                    margin: 0;
+                }
+            }
+        }
+        form {
+            width: 50%;
+        }
+        input[type="submit"] {
+            margin-bottom: 59px;
+        }
+    }
+}
+
+@media (min-width: 1356px) {
+
+    .pricing {
+        margin-top: 100px;
+        margin-bottom: 180px;
+        .pricing-main {
+            flex-direction: row;
+            margin: 0 18px;
+        }
+        h2 {
+            margin-bottom: 50px;
+        }
+        h3 {
+            margin-top: 22.5px;
+        }
+        ul {
+            margin: 60px 0 70px 0;
+        }
+        li {
+            text-align: center;
+        }
+        .content {
+            flex-direction: column;
+        }
+        .basic, .professional, .premium {
+            height: 460px;
+        }
+        .professional {
+            height: 500px;
+            margin: 0 18px;
+        }
+
+    }
+}

@@ -1,0 +1,44 @@
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+    /* width: 85vw; */
+    margin: 0 auto;
+}
+
+body {
+    border: 2px solid #E8E9ED;
+}
+
+h1 {
+    font: 400 3.5rem 'Raleway';
+    line-height: 4.1rem;
+}
+
+h2 {
+    font: 400 3rem 'Raleway';
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+h3 {
+    font: bold 2rem 'Raleway';
+    line-height: 24px;
+    text-align: center;
+}
+
+p {
+    font: 400 1.6rem 'Open Sans';
+    line-height: 2.2rem;
+}
+
+a {
+    &:link, &:visited, &:hover, &:active {
+        color: #A5A5A5;
+        text-decoration: none;
+    }
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}

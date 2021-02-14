@@ -1,0 +1,27 @@
+footer {
+    height: 90px;
+    box-shadow: 0px -5px 40px #00000029;
+    background-color: #F7F7F7;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    p:first-of-type {
+        font: 300 2.6rem 'Raleway';
+        margin: 0;
+    }
+    p:last-of-type {
+        font: 400 1.1rem 'Open Sans';
+        color: #A5A5A5;
+        margin-top: 6.5px;
+    }
+}
+
+.socialmedia {
+    margin-right: 20px;
+    img {
+        margin: 0 10px;
+    }
+}
